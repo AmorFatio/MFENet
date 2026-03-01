@@ -104,13 +104,7 @@ Comparison with SOTA methods (Table 3 in the paper):
 If you find this work helpful, please consider citing:
 
 ```bibtex
-@article{wang2026mfenet,
-  title={Multi-Scale Feature Enhancement Network for Object Detection in Severe Foggy Weather},
-  author={Wang, Yingjun and Yang, Xiaopeng and Wang, Yingjian and Zhuang, Peixian and Zhao, Wenyi and Lu, Haoxiang and Zhang, Weidong},
-  journal={Engineering Applications of Artificial Intelligence},
-  year={2026},
-  note={Under Revision}
-}
+
 
 ```
 
