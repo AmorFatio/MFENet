@@ -118,22 +118,3 @@ If you find this work helpful, please consider citing:
 
 This work was supported by the National Natural Science Foundation of China (Grants 61971444, 62403066, etc.) and the Fundamental Research Funds for the Central Universities.
 
-```
-
----
-
-### **💡 上传前的必做事项**
-
-1.  **创建文件夹**：在您的 GitHub 仓库里创建一个名为 `assets` 的文件夹。
-2.  **上传图片**：
-    * 将论文中的 **Fig. 1 (架构图)** 截图，命名为 `architecture.png`，放入 `assets` 文件夹。
-    * 将论文中的 **Fig. 6 (RTTS 结果图)** 截图，命名为 `results.png`，放入 `assets` 文件夹。
-3.  **替换链接**：
-    * 将 `https://github.com/YourUsername/MFENet.git` 中的 `YourUsername` 替换为您真实的 GitHub 用户名。
-4.  **准备依赖文件**：
-    * 确保根目录下有一个 `requirements.txt` 文件（包含 `torch`, `opencv-python` 等依赖）。
-    * 确保有一个 `models/MFENet.yaml` 配置文件。
-
-这样写出来的 README 非常专业，审稿人看到会认为您的工作非常扎实且易于复现，极大地增加录用概率！
-
-```
