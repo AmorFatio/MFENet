@@ -1,50 +1,25 @@
 # MFENet
 A lightweight and robust object detection network designed for severe foggy weather, achieving high precision with low complexity.
-基于您提供的论文 **EAAI-25-12673**，我为您撰写了一份完整的、高度定制的 `README.md`。
-
-这份文档包含了您的**模型架构图**、**环境配置**、**数据集准备**、**训练/测试命令**以及最重要的**引用格式**。您可以直接复制以下内容到您的 GitHub 仓库的 `README.md` 文件中。
-
----
-
-### **README.md 模板 (直接复制)**
 
 ```markdown
 # Multi-Scale Feature Enhancement Network for Object Detection in Severe Foggy Weather
 
-<div align="center">
-
-**[EAAI Under Revision]**
-**MFENet: A lightweight and robust object detection network designed for severe foggy weather, achieving high precision with low complexity.**
-
-[![Paper](https://img.shields.io/badge/Journal-EAAI-blue)](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
-[![Framework](https://img.shields.io/badge/Framework-PyTorch-orange)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)]()
-
-</div>
-
-## 📖 Introduction
+📖 Introduction
 
 This repository contains the official PyTorch implementation of the paper: **"Multi-Scale Feature Enhancement Network for Object Detection in Severe Foggy Weather"**.
 
-**MFENet** is designed to address the challenges of low contrast and blurred structures in foggy traffic environments. It integrates three novel modules into a lightweight architecture:
-* [cite_start]**SFRM (Spatial-Frequency Feature Recovery Module):** Recovers degraded features using both local spatial details and global frequency context[cite: 16].
-* [cite_start]**DIM (Dual-Dimensional Interaction Module):** Enhances feature representation through spatial and channel-wise semantic interaction[cite: 18].
-* [cite_start]**OADH (Occlusion-Aware Detection Head):** Improves detection of occluded objects in dense fog[cite: 19].
+**MFENet** is designed to address the challenges of low contrast and blurred structures in foggy traffic environments. 
 
-### Key Performance
-* [cite_start]**High Accuracy:** Achieves **78.85% mAP50** on VOC-fog and **75.89% mAP50** on RTTS datasets[cite: 47].
-* [cite_start]**Real-time Speed:** Inference speed of **117 FPS** on an RTX 4060 Ti[cite: 49].
-* [cite_start]**Lightweight:** Only **7.8M parameters**, balancing complexity and performance[cite: 48].
 
-## 🏗️ Architecture
+🏗️ Architecture
 
 ![Architecture](./assets/architecture.png)
 *Figure 1: The overall architecture of MFENet, integrating SFRM, DIM, and OADH modules.* 
 
-## 🔨 Installation
+🔨 Installation
 
-### Environment Requirements
-* Linux (Tested on Ubuntu 20.04)
+Environment Requirements
+* Windows
 * Python 3.8+
 * PyTorch 1.10+
 * CUDA 11.0+
