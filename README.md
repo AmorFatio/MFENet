@@ -10,12 +10,6 @@ This repository contains the official PyTorch implementation of the paper: **"Mu
 
 **MFENet** is designed to address the challenges of low contrast and blurred structures in foggy traffic environments. 
 
-
-🏗️ Architecture
-
-![Architecture](./assets/architecture.png)
-*Figure 1: The overall architecture of MFENet, integrating SFRM, DIM, and OADH modules.* 
-
 🔨 Installation
 
 Environment Requirements
