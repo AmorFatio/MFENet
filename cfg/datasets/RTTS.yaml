@@ -1,0 +1,19 @@
+download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: E:\MFENet\ultralytics\cfg\datasets\RTTS\images\train  # 118287 images
+
+val: E:\MFENet\ultralytics\cfg\datasets\RTTS\images\val # 5000 images
+
+test: E:\MFENet\ultralytics\cfg\datasets\RTTS\images\test  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 5
+
+# class names
+names: #[ 'person', 'car', 'bicycle', 'bus', 'motorcycle' ]
+  0: bus
+  1: bicycle
+  2: car
+  3: person
+  4: motorcycle

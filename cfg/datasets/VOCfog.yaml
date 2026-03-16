@@ -1,0 +1,16 @@
+download: bash ./scripts/get_coco.sh
+
+train: E:\MFENet\ultralytics\cfg\datasets\VOCfog\images\train
+
+val: E:\MFENet\ultralytics\cfg\datasets\VOCfog\images\val
+
+test: E:\MFENet\ultralytics\cfg\datasets\VOCfog\images\test
+
+nc: 5
+
+names:
+  0: bus
+  1: bicycle
+  2: car
+  3: person
+  4: motorcycle
