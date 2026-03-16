@@ -1,37 +1,31 @@
-# MFENet
+## MFENet
+
 A lightweight and robust object detection network designed for severe foggy weather, achieving high precision with low complexity.
 
-```markdown
+markdown
 # Multi-Scale Feature Enhancement Network for Object Detection in Severe Foggy Weather
 
-📖 Introduction
+## 📖 Introduction
 
 This repository contains the official PyTorch implementation of the paper: **"Multi-Scale Feature Enhancement Network for Object Detection in Severe Foggy Weather"**.
 
 **MFENet** is designed to address the challenges of low contrast and blurred structures in foggy traffic environments. 
 
-🔨 Installation
+## 🔨 Installation
 
 Environment Requirements
-* Windows
 * Python 3.8+
 * PyTorch 1.10+
 * CUDA 11.0+
 
-### Setup
-```bash
-# Clone this repository
-git clone [https://github.com/YourUsername/MFENet.git](https://github.com/YourUsername/MFENet.git)
-cd MFENet
+Setup
 
-# Create a virtual environment
-conda create -n mfenet python=3.9
-conda activate mfenet
+Create a virtual environment
+* conda create -n mfenet python=3.9
+* conda activate mfenet
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
-
-```
 
 ## 📂 Data Preparation
 
@@ -56,12 +50,6 @@ We use **VOC-fog** (synthetic),  **RTTS** and **FDD** (real-world) datasets. Ple
 │   │   └── labels
 ```
 
-* **RTTS Dataset:** Available at [RESIDE-Beta](https://www.google.com/search?q=https://sites.google.com/view/reside-dehaze-datasets/reside-beta).
-* 
-**VOC-fog:** Generated based on VOC2012.
-
-
-
 ## 🚀 Usage
 
 ### Training
@@ -69,7 +57,7 @@ We use **VOC-fog** (synthetic),  **RTTS** and **FDD** (real-world) datasets. Ple
 To train MFENet on the RTTS dataset (Batch size 16, 300 epochs):
 
 ```bash
-python train.py --data data/RTTS.yaml --cfg models/MFENet.yaml --batch-size 16 --epochs 300 --lr 0.01
+python Mytrain.py --data data/RTTS.yaml --cfg models/MFENet.yaml --batch-size 16 --epochs 300 --lr 0.01
 
 ```
 
@@ -78,13 +66,13 @@ python train.py --data data/RTTS.yaml --cfg models/MFENet.yaml --batch-size 16 -
 To evaluate the model on the test set:
 
 ```bash
-python val.py --weights runs/train/exp/weights/best.pt --data data/RTTS.yaml --img 640
+python Mytest.py --weights runs/train/exp/weights/best.pt --data data/RTTS.yaml --img 640
 
 ```
 
 ## 📊 Results
 
-### Performance on RTTS (Real-world Fog)
+### Performance on RTTS and FDD (Real-world Fog)
 
 Comparison with SOTA methods (Table 3 in the paper):
 
