@@ -1,0 +1,32 @@
+# ==========================================
+# Core Deep Learning & Vision Packages
+# ==========================================
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+ultralytics==8.3.226
+opencv-python==4.9.0.80
+timm==0.5.4
+
+# ==========================================
+# Data Processing & Computation
+# ==========================================
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.0
+scikit-learn==1.5.2
+
+# ==========================================
+# Visualization & Plotting
+# ==========================================
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# ==========================================
+# Utilities & MMLab Ecosystem
+# ==========================================
+tqdm==4.66.5
+PyYAML==6.0.1
+tensorboard==2.18.0
+mmengine==0.10.7
+einops==0.8.0
