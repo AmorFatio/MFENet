@@ -35,19 +35,25 @@ pip install -r requirements.txt
 
 ## 📂 Data Preparation
 
-We use **VOC-fog** (synthetic) and **RTTS** (real-world) datasets. Please organize your datasets as follows:
+We use **VOC-fog** (synthetic),  **RTTS** and **FDD** (real-world) datasets. Please organize your datasets as follows:
 
 ```text
-├── data
+├── datasets
 │   ├── VOC_Fog
 │   │   ├── images
 │   │   │   ├── train
 │   │   │   └── val
+│   │   │   └── test
 │   │   └── labels
+│   │   │   ├── train
+│   │   │   └── val
+│   │   │   └── test
 │   ├── RTTS
-│       ├── images
-│       └── labels
-
+│   │   ├── images
+│   │   └── labels
+│   ├── FDD
+│   │   ├── images
+│   │   └── labels
 ```
 
 * **RTTS Dataset:** Available at [RESIDE-Beta](https://www.google.com/search?q=https://sites.google.com/view/reside-dehaze-datasets/reside-beta).
@@ -82,12 +88,18 @@ python val.py --weights runs/train/exp/weights/best.pt --data data/RTTS.yaml --i
 
 Comparison with SOTA methods (Table 3 in the paper):
 
-| Method | Type | Params (M) | FLOPs (G) | FPS | mAP50 (%) |
-| --- | --- | --- | --- | --- | --- |
-| IA-YOLO (AAAI'22) | Domain-Adaptive | 58.9 | 65.6 | 26 | 42.24 |
-| GDIP-YOLO (ICRA'23) | Domain-Adaptive | 68.1 | 105.2 | 32 | 42.66 |
-| YOLO11 (Baseline) | General | 2.6 | 6.5 | 126 | 74.45 |
-| **MFENet (Ours)** | **Fog Detection** | **7.8** | **12.1** | **117** | **75.89** |
+| Method | Publication | Year | Type | RTTS Precision↑ | RTTS mAP(%)↑ | FDD Precision↑ | FDD mAP(%)↑ | FPS↑ |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Cascade R-CNN | CVPR | 2018 | General | 75.36 | 67.25 | 48.42 | 30.06 | 46 |
+| CenterNet | CVPR | 2019 | General | 68.51 | 56.74 | 37.45 | 23.77 | 47 |
+| YOLO11 | - | 2024 | General | 76.89 | 74.45 | 50.46 | 34.78 | 126 |
+| RT-DETR | CVPR | 2024 | General | 76.63 | 74.18 | 51.26 | 35.41 | 43 |
+| DEIM | CVPR | 2025 | General | 77.96 | 75.33 | 50.31 | 35.76 | 87 |
+| MASFNet | TGRS | 2025 | Multi-task | 77.82 | 73.68 | 51.19 | 30.95 | **128** |
+| YOLO26 | - | 2026 | General | 78.89 | 73.50 | 48.07 | 35.23 | 92 |
+| **MFENet (Ours)**| - | - | - | **79.23**| **75.89**| **52.78**| **36.38**| 117 |
+
+> *Note: **Bold** indicates the best result. *
 
 ### Visualization
 
